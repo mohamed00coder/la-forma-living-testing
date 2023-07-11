@@ -1,0 +1,191 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+/* font-family: 'Belanosima', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+/* font-family: 'Carter One', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* font-family: 'Lobster', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap');
+/* font-family: 'Changa', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif; 
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+.navbar-container{
+    display: flex;
+}
+.menuRight{
+    width: 70px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.8s;
+} 
+.menuRight:hover{
+    width: 265px;
+    overflow: scroll;
+} 
+.menu-item-right{
+    display: flex;
+    padding: 15px; 
+    transition: 0.8s;
+    border-radius: 10px;
+}
+.menu-item-right:hover{
+   background-color: #2424242c;
+ }
+.menu-item-right a {
+   display: flex;
+}
+.menu-item-right a i{
+    font-size: 30px;
+}
+.menu-item-right a p{
+    padding: 0 25px;
+}
+
+.menuTop{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    box-shadow: -6px 0px 5px 0px #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.a-logo img{
+    transition: 0.5s;
+    width: 100px;
+
+}
+.a-logo img:hover{
+    rotate: 2deg;
+
+}
+.menu-item-top-register input[type="search"]{
+    width: 360px;
+    padding: 5px;
+    position: relative;
+    transition: 1s;
+}
+.menu-item-top-register button[type="submit"]{
+    padding: 5px;
+    position: absolute;
+    
+}
+
+@media (min-width:260px) and (max-width:359px){
+    .navbar-container{
+        display: flex;
+    }
+    .menuRight{
+        width: 50px;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 0px 0px 5px 0px #333;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.8s;
+    } 
+    .menuRight:hover{
+        width: 230px;
+        overflow: scroll;
+    } 
+    .menu-item-right{
+        display: flex;
+        padding: 15px; 
+        transition: 0.8s;
+        border-radius: 10px;
+    }
+    .menu-item-right:hover{
+       background-color: #2424242c;
+    }
+    .menu-item-right a {
+       display: flex;
+    }
+    .menu-item-right a i{
+        font-size: 15px;
+    }
+    .menu-item-right a p{
+        padding: 0 15px;
+    }
+    
+    .menuTop{
+        width: 100%;
+        height: 10vh;
+        background-color: #fff;
+        box-shadow: -6px 0px 5px 0px #333;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .a-logo img{
+        transition: 0.5s;
+        width: 50px;
+    
+    }
+    .a-logo img:hover{
+        rotate: 2deg;
+    
+    }
+    .menu-item-top-register input[type="search"]{
+        width: 70px;
+        height: 10px;
+        padding: 0;
+        position: relative;
+        font-size: 5px;
+   
+    }
+    .menu-item-top-register button[type="submit"]{
+        padding: 0;
+        font-size: 5px;
+        height: 10px;
+        position: absolute;
+        
+    }
+    
+
+}
+
+@media (min-width:360px) and (max-width:400px){
+    .menu-item-top-register input[type="search"]{
+        width: 100px;
+    }
+}
+@media (min-width:401px) and (max-width:599px){
+    .menu-item-top-register input[type="search"]{
+        width: 150px;
+    }
+}
+@media (min-width:600px) and (max-width:700px){
+    .menu-item-top-register input[type="search"]{
+        width: 300px;
+    }
+}
+
+
+
